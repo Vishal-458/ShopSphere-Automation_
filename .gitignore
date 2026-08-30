@@ -5,4 +5,5 @@ __pycache__/
 logs/
 test-results/
 playwright-report/
+reports/
 *.db
