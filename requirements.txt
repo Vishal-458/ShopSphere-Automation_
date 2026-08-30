@@ -2,4 +2,4 @@ pytest
 playwright
 pytest-playwright
 requests
-requirements.txt
+pytest-xdist
