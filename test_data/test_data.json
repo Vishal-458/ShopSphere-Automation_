@@ -1,0 +1,22 @@
+{
+    "valid_user": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+    "customer": {
+        "first_name": "Vishal",
+        "last_name": "Tester",
+        "postal_code": "452001"
+    },
+    "products": {
+        "backpack": "Sauce Labs Backpack",
+        "bike_light": "Sauce Labs Bike Light"
+    },
+    "api": {
+        "post": {
+            "title": "ShopSphere Product",
+            "body": "Created through API",
+            "userId": 1
+        }
+    }
+}
