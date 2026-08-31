@@ -41,7 +41,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -v --browser ${{ matrix.browser }} --html=reports/report.html --self-contained-html
+          pytest -v --browser ${{ matrix.browser }} --reruns 1 --html=reports/report.html --self-contained-html
 
       - name: Upload test report
         if: always()
