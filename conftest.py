@@ -11,6 +11,14 @@ from utils.config_reader import load_config
 from utils.api_client import APIClient
 from utils.db_helper import DBHelper
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--env",
+        action="store",
+        default="qa",
+        help="Environment to run tests against"
+    )
+
 @pytest.fixture
 def login_page(page: Page, config):
     return LoginPage(
@@ -43,9 +51,9 @@ def test_data():
     return load_test_data()
 
 @pytest.fixture
-def config():
-    return load_config()
-
+def config(request):
+    environment = request.config.getoption("--env")
+    return load_config(environment)
 @pytest.fixture
 def api_client(config):
     return APIClient(

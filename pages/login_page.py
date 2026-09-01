@@ -32,3 +32,7 @@ class LoginPage(BasePage):
         self.login_button.click()
 
         self.logger.info("Login button clicked")
+    def get_error_message(self) -> str:
+        return self.page.locator(
+        "[data-test='error']"
+    ).inner_text()

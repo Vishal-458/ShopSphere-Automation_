@@ -58,4 +58,45 @@ ShopSphere-Automation/
 ├── pytest.ini
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+└── README.md  
+
+
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Playwright browsers
+playwright install
+
+# Run all tests
+pytest -v
+
+# Run Chromium
+pytest -v --browser chromium
+
+# Run Firefox
+pytest -v --browser firefox
+
+# Run WebKit
+pytest -v --browser webkit
+
+# Run staging
+pytest -v --env staging
+
+# Run smoke tests
+pytest -v -m smoke
+
+# Run API tests
+pytest -v -m api
+
+# Run database tests
+pytest -v -m database
+
+# Run in parallel
+pytest -v -n auto
+
+# Run with retry
+pytest -v --reruns 1
+
+# Generate HTML report
+pytest -v --html=reports/report.html --self-contained-html

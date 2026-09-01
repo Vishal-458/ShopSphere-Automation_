@@ -1,0 +1,5 @@
+{
+    "base_url": "https://www.saucedemo.com/",
+    "api_base_url": "https://jsonplaceholder.typicode.com",
+    "database_path": "test_data/shopsphere.db"
+}

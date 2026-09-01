@@ -18,5 +18,24 @@
             "body": "Created through API",
             "userId": 1
         }
+    },
+    "login_users": [
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected_success": true
+    },
+    {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expected_success": false
+    },
+    {
+        "username": "invalid_user",
+        "password": "wrong_password",
+        "expected_success": false
     }
+]
+    
 }
+

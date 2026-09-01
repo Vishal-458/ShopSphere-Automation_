@@ -34,4 +34,5 @@ class DBHelper:
 
     def close(self):
         if self.connection:
-            self.connection.close()
+           self.connection.close()
+           self.connection = None
